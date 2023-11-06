@@ -1,4 +1,4 @@
-# [🌱](https://www.joone.org)  Joone
+# 🌱  <a href="https://joone.org">Joone</a>
 A 501(c)(3) non-profit providing K-12 curricula and assistive technologies.
 
 <br>
@@ -16,4 +16,4 @@ We uphold a set of core principles:
 - **Integrity:** We adhere to global data protection regulations, align our actions with our mission, and maintain transparency in our processes. Our platform is open-source, promoting global collaboration.
 - **Sustainability:** We aim to be efficient and current, addressing education gaps without compromising future needs. Our platform is flexible, responsive, and evolves with changing contexts.
 <br>
-<p align="center"><a href="https://joone.org">Joone 501(c)(3)</a> © 2023<br><a href="https://joone.org/legal.html">Policies & Terms</a></p>
+<p align="center">Joone 501(c)(3)</a> © 2023</p>
