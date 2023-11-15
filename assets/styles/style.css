@@ -28,6 +28,13 @@ body {
         -webkit-text-size-adjust: none;
 }
 
+
+.active {
+        opacity: 1;
+        transform: none;
+    }
+
+
 #chat-output-wrapper {
         width: 100%;
         max-height: 70vh;
@@ -63,10 +70,7 @@ body {
         background-color: #9bdeac;
         text-align: left;
       }
-      
-      
-      
-      
+   
 
 .input-style {
         font-size: 1em;
@@ -117,7 +121,7 @@ body:before {
         transform: scale(1);
         width: 100vw;
         z-index: 0;
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Cfilter%20id%3D%22noise%22%3E%20%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%20%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220.99609375%200%200%200%200%200%200.5%200%200%200%200%200%200.73828125%200%200%200%200%200%200.5078125%200%22%20%2F%3E%20%3C%2Ffilter%3E%20%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E"),
+        background-image: url("/assets/img/bg.svg"),
                 radial-gradient(53% 67% at 50% 81%, #ffc0b8 0%, #7d42b8 100%);
         background-size: 512px, auto;
         background-position: center, 0% 0%;
@@ -220,6 +224,7 @@ a {
         transition: opacity 0.375s ease-in-out 0.1875s,
                 min-height 0.1875s ease-in-out, max-height 0.1875s ease-in-out;
 }
+
 form {
         display: flex;
         justify-content: var(--flex-alignment);
@@ -283,6 +288,59 @@ form input[type="text"] {
         color: rgba(255, 255, 255, 0.761);
         opacity: 0.55;
 }
+
+
+form .actions {
+        max-width: 100%;
+        /* ... other styles ... */
+      }
+      
+      form .actions button {
+        /* Various styles for layout, background, border, cursor, display, text alignment, and more */
+      }
+      
+      form .actions button:disabled {
+        cursor: default;
+        opacity: 0.35;
+        pointer-events: none;
+      }
+      
+      #form01 .actions button {
+        max-width: 100%;
+        width: 100%;
+      }
+      
+      #form01 .actions button svg {
+        width: 1.25em;
+      }
+      
+      #form01 .actions button:hover {
+        background-color: #8770e0;
+      }
+      
+      #form01 .actions button .label {
+        /* Various styles for text direction, overflow, flex properties, text alignment, and width */
+      }
+      
+      #form01 .actions button:before {
+        /* Animation, background image, content, display, position, and more */
+      }
+      
+      #form01 .actions button.waiting {
+        color: transparent;
+      }
+      
+      #form01 .actions button.waiting svg {
+        fill: transparent;
+      }
+      
+      #form01 .actions button.waiting:before {
+        opacity: 1;
+        /* A transition delay */
+      }
+      
+
+
 .image {
         display: block;
         line-height: 0;
@@ -319,6 +377,13 @@ form input[type="text"] {
 #image01 .frame img {
         transition: none;
 }
+
+ 
+#image01 {
+        opacity: 1;
+        transform: none;
+    }
+
 .container {
         position: relative;
 }
@@ -378,6 +443,14 @@ form input[type="text"] {
         margin-bottom: 0 !important;
 }
 
+
+    
+    #container02 {
+        opacity: 1;
+        transform: none;
+    }
+   
+   
 .icons li a svg {
    
         width: 16px;
@@ -434,6 +507,15 @@ form input[type="text"] {
 #icons01 li a:hover {
         transform: scale(1.1125);
 }
+
+ 
+.icons {
+        opacity: 1;
+    }
+
+    
+    
+
 @media (max-width: 1680px) {
         html {
                 font-size: 12pt;
@@ -509,23 +591,3 @@ form input[type="text"] {
                 gap: 0.75rem;
         }
 }
-
-#image01 {
-    opacity: 1;
-    transform: none;
-}
-
-#container02 {
-    opacity: 1;
-    transform: none;
-}
-
-.icons {
-    opacity: 1;
-}
-
-.active {
-    opacity: 1;
-    transform: none;
-}
-
